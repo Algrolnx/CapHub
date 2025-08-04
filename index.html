@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapHub - Premium Caps & Hats</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 30px rgba(255,255,255,0.6);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(255,255,255,0.8), 0 0 60px rgba(255,215,0,0.4);
+                transform: scale(1.05);
+            }
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #0066cc 0%, #004499 50%, #ffd700 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .min-vh-75 {
+            min-height: 75vh;
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #0066cc, #ffd700);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <div class="logo-container me-2">
+                    <i class="bi bi-cap-fill text-primary" style="font-size: 2rem;"></i>
+                </div>
+                <div>
+                    <strong>CapHub</strong>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about-us.html" target="_blank">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative overflow-hidden">
+        <div class="hero-bg-pattern"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <div class="badge bg-white text-primary mb-3 px-3 py-2">
+                            <i class="bi bi-award me-1"></i>Premium Quality
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4 text-white">
+                            Premium Caps & Hats 
+                            <span class="text-warning">Collection</span>
+                        </h1>
+                        <p class="lead mb-4 text-light">Discover our exclusive range of high-quality caps and hats crafted with precision and care. From classic baseball caps to trendy snapbacks, we combine traditional craftsmanship with modern style.</p>
+                        
+                        <div class="hero-stats mb-4">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h4 class="text-warning mb-0">50+</h4>
+                                        <small class="text-light">Unique Designs</small>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h4 class="text-warning mb-0">10K+</h4>
+                                        <small class="text-light">Happy Customers</small>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h4 class="text-warning mb-0">2015</h4>
+                                        <small class="text-light">Since</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons mt-4">
+                            <div class="row">
+                                <div class="col-4"></div>
+                                <div class="col-4 text-center">
+                                    <a href="about-us.html" target="_blank" class="btn btn-outline-light btn-lg px-5 py-3" style="box-shadow: 0 0 30px rgba(255,255,255,0.6); border-width: 3px; font-weight: 800; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); animation: pulse-glow 2s infinite;">
+                                        <i class="bi bi-play-circle me-2"></i>Learn More
+                                    </a>
+                                </div>
+                                <div class="col-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center mb-5 mb-lg-0">
+                    <div class="hero-image-container position-relative">
+                        <img src="img/bunch-of-caps.png" 
+                             alt="Premium Caps Collection" class="img-fluid hero-main-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <h5>Free Shipping</h5>
+                    <p class="text-muted">Free shipping on orders over $45. Fast and reliable delivery worldwide.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <h5>Premium Quality</h5>
+                    <p class="text-muted">Only the finest materials and craftsmanship in every single cap we sell.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="bi bi-arrow-clockwise"></i>
+                    </div>
+                    <h5>Easy Returns</h5>
+                    <p class="text-muted">30-day return policy. Not satisfied? Return it for a full refund.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold mb-3">Our Products</h2>
+                    <p class="lead text-muted">See how our caps look like</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Baseball Caps -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100 border-0">
+                        <img src="img/caps/classic-blue-cap.png" 
+                             class="card-img-top" alt="Classic Baseball Cap" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Classic Baseball Cap</h5>
+                            <p class="card-text text-muted">Timeless navy blue baseball cap made from premium cotton</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100 border-0">
+                        <img src="img/caps/red-sports-cap.png" 
+                             class="card-img-top" alt="Sports Baseball Cap" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Sports Baseball Cap</h5>
+                            <p class="card-text text-muted">Athletic red baseball cap with moisture-wicking technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snapbacks -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100 border-0">
+                        <img src="img/caps/black-cap.png" 
+                             class="card-img-top" alt="Urban Snapback" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Urban Snapback</h5>
+                            <p class="card-text text-muted">Modern black snapback with flat visor and adjustable fit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100 border-0">
+                        <img src="img/caps/white-cap.png" 
+                             class="card-img-top" alt="Street Snapback" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Street Snapback</h5>
+                            <p class="card-text text-muted">White snapback with vibrant street-style graphics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beanies -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100 border-0">
+                        <img src="img/caps/gray-beanie.png" 
+                             class="card-img-top" alt="Wool Beanie" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Wool Beanie</h5>
+                            <p class="card-text text-muted">Cozy gray wool beanie perfect for cold weather</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card product-card h-100 border-0">
+                        <img src="img/caps/cream-beanie.png" 
+                             class="card-img-top" alt="Cable Knit Beanie" style="height: 300px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Cable Knit Beanie</h5>
+                            <p class="card-text text-muted">Cream cable-knit beanie with pom pom detail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/caps-on-shop.png" 
+                         alt="About CapHub" class="img-fluid rounded shadow mb-4">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">About CapHub</h2>
+                    <p class="mb-4">Since 2015, CapHub has been the premier destination for cap enthusiasts worldwide. We believe that the right cap doesn't just complete your outfit – it expresses your personality and unique style.</p>
+                    <p class="mb-4">Our team works with skilled craftsmen to create caps that combine traditional quality with modern design. Every cap is crafted with attention to detail, supporting quality artisanship and excellent craftsmanship.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5 class="text-primary">10,000+</h5>
+                            <p class="small text-muted">Happy Customers</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-primary">50+</h5>
+                            <p class="small text-muted">Unique Designs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Get In Touch</h2>
+                    <p class="lead text-muted">Have questions? We'd love to hear from you!</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-cap-fill me-2"></i>CapHub
+                    </h5>
+                    <p class="text-muted">Your premium destination for quality caps and hats. Style meets comfort in every piece.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="#products" class="text-muted text-decoration-none">Products</a></li>
+                        <li><a href="#about" class="text-muted text-decoration-none">About</a></li>
+                        <li><a href="#contact" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Customer Service</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Shipping Info</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Size Guide</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted small">Subscribe to get updates on new arrivals and exclusive offers.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted small mb-0">&copy; 2024 CapHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none small me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

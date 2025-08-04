@@ -1,0 +1,152 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== УКРАЇНСЬКІ КОЛЬОРИ ===== */
+.ukraine-colors {
+    background: linear-gradient(to right, #0066cc 50%, #ffd700 50%);
+    height: 5px;
+    width: 100%;
+}
+
+/* ===== HERO СЕКЦІЯ ===== */
+.hero-about {
+    background: linear-gradient(135deg, #0066cc 0%, #004499 50%, #ffd700 100%);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+/* ===== КАРТОЧКИ ОСОБЛИВОСТЕЙ ===== */
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== УКРАЇНСЬКІ ІКОНКИ ===== */
+.icon-ukraine {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #0066cc, #ffd700);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: #ffd700;
+    border: 3px solid #0066cc;
+    border-radius: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 15px;
+    width: 1px;
+    height: calc(100% + 15px);
+    background: #0066cc;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+/* ===== КНОПКИ ===== */
+.btn-ukraine {
+    background: linear-gradient(45deg, #0066cc, #ffd700);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-ukraine:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 204, 0.4);
+    color: white;
+}
+
+/* ===== СТАТИСТИКА ===== */
+.stats-counter {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0066cc;
+}
+
+/* ===== ЗОБРАЖЕННЯ ===== */
+.workshop-image {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== АДАПТИВНІСТЬ ===== */
+@media (max-width: 768px) {
+    .hero-about {
+        padding: 60px 0;
+    }
+    
+    .stats-counter {
+        font-size: 2rem;
+    }
+    
+    .icon-ukraine {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-about {
+        padding: 40px 0;
+    }
+    
+    .timeline-item {
+        padding-left: 20px;
+    }
+    
+    .timeline-item::before {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .timeline-item::after {
+        left: 5px;
+    }
+}
