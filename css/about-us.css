@@ -4,14 +4,12 @@ body {
     line-height: 1.6;
 }
 
-/* ===== УКРАЇНСЬКІ КОЛЬОРИ ===== */
 .ukraine-colors {
     background: linear-gradient(to right, #0066cc 50%, #ffd700 50%);
     height: 5px;
     width: 100%;
 }
 
-/* ===== HERO СЕКЦІЯ ===== */
 .hero-about {
     background: linear-gradient(135deg, #0066cc 0%, #004499 50%, #ffd700 100%);
     color: white;
@@ -19,7 +17,6 @@ body {
     position: relative;
 }
 
-/* ===== КАРТОЧКИ ОСОБЛИВОСТЕЙ ===== */
 .feature-card {
     background: white;
     border-radius: 15px;
@@ -33,7 +30,6 @@ body {
     transform: translateY(-10px);
 }
 
-/* ===== УКРАЇНСЬКІ ІКОНКИ ===== */
 .icon-ukraine {
     width: 80px;
     height: 80px;
@@ -47,7 +43,6 @@ body {
     margin: 0 auto 20px;
 }
 
-/* ===== TIMELINE ===== */
 .timeline-item {
     position: relative;
     padding-left: 30px;
@@ -80,7 +75,6 @@ body {
     display: none;
 }
 
-/* ===== КНОПКИ ===== */
 .btn-ukraine {
     background: linear-gradient(45deg, #0066cc, #ffd700);
     border: none;
@@ -97,20 +91,17 @@ body {
     color: white;
 }
 
-/* ===== СТАТИСТИКА ===== */
 .stats-counter {
     font-size: 3rem;
     font-weight: 700;
     color: #0066cc;
 }
 
-/* ===== ЗОБРАЖЕННЯ ===== */
 .workshop-image {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-/* ===== АДАПТИВНІСТЬ ===== */
 @media (max-width: 768px) {
     .hero-about {
         padding: 60px 0;
@@ -150,3 +141,4 @@ body {
         left: 5px;
     }
 }
+
